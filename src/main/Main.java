@@ -16,6 +16,14 @@ public class Main {
         // Objeto cine construido
         Cine cine1 = new Cine("Artesiete", 200, 5);
 
+        // Creamos en el Main 5 objetos de peliculas, 1 por cada sala
+
+        Pelicula pelicula1 = new Pelicula("Frozen", 120);
+        Pelicula pelicula2 = new Pelicula("Spiderman", 145);
+        Pelicula pelicula3 = new Pelicula("Wonka", 113);
+        Pelicula pelicula4 = new Pelicula("Barbie", 110);
+        Pelicula pelicula5 = new Pelicula("La Sirenita", 100);
+
         System.out.println("\nBienvenido al programa de compra de entradas del cine " + cine1.getNombreCine() + ", contamos con " + cine1.getNumSalas() + " salas y con un aforo total de " + cine1.getAforo() + " de personas");
 
         while (opcion != 4) {
