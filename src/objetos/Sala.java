@@ -29,7 +29,13 @@ public class Sala {
     }
 
     /**
-     * Este método reserva la butaca según la sala y registra un 1 cuando se reserva
+     * Este método reserva la butaca según el número de sala.
+     * Primero muestra la matriz, después permite escoger el sitio, por último
+     * vuelve a mostrar la matriz indicando donde está el asiento.
+     * Si el asiento es 0, significa que no está reservado, en cambio, si el asiento
+     * es 1, indica que está reservado.
+     * Si se intenta reservar un asiento marcado con 1, no será permitido y permitirá
+     * elegir otra opción.
      */
     public void reservarButaca() {
 
