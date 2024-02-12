@@ -73,6 +73,11 @@ public class Sala {
 
     }
 
+    /**
+     * Este método muestra los asientos libres de cada sala según el número
+     * de la sala.
+     * Si es 0 está libre y si es 1 está ocupado.
+     */
     public void asientosLibres() {
         System.out.println("\nEstos son los asientos de la sala " + getNumSala() + "\n");
         for (int i = 0; i < butacas.length; i++) {
