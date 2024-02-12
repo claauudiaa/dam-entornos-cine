@@ -28,6 +28,45 @@ public class Sala {
         System.out.println("Duración: " + pelicula.getDuracion() + " minutos");
     }
 
+    /**
+     * Este método reserva la butaca según la sala y registra un 1 cuando se reserva
+     */
+    public void reservarButaca() {
+
+        Scanner entrada = new Scanner(System.in);
+        int fila;
+        int columna;
+        System.out.println("\n");
+        for (int i = 0; i < butacas.length; i++) {
+            for (int j = 0; j < butacas[i].length; j++) {
+                System.out.print(butacas[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.print("\nSelecciona una fila: ");
+        fila = entrada.nextInt();
+        System.out.print("Selecciona una columna: ");
+        columna = entrada.nextInt();
+
+        // Esta parte impide que se reserve una butaca ocupada
+
+        if (butacas[fila][columna] == 1) {
+            System.out.println("\nAsiento ocupado, por favor, seleccione otro asiento\n");
+        } else {
+            butacas[fila][columna] = 1; // El 1 representa una butaca ocupada
+            System.out.println("\nAsiento reservado con éxito\n");
+        }
+
+        for (int i = 0; i < butacas.length; i++) {
+            for (int j = 0; j < butacas[i].length; j++) {
+                System.out.print(butacas[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+    }
+
     public int getNumSala() {
         return numSala;
     }
