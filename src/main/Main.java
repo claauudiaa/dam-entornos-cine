@@ -25,7 +25,11 @@ public class Main {
         Pelicula pelicula4 = new Pelicula("Barbie", 110);
         Pelicula pelicula5 = new Pelicula("La Sirenita", 100);
 
+        // Aquí se crea un array de objetos
+
         Sala[] salas = new Sala[cine1.getNumSalas()];
+
+        // Las diferentes salas del cine
 
         salas[0] = new Sala(1, pelicula1, 5, 8);
         salas[1] = new Sala(2, pelicula2, 5, 8);
