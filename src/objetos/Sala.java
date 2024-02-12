@@ -18,6 +18,10 @@ public class Sala {
         }
     }
 
+    /**
+     * Este método se encarga de mostrar la información de la sala usando el número
+     * y los dos atributos con los que cuenta la clase Pelicula.
+     */
     public void mostrarInformacion() {
         System.out.println("\nNúmero de Sala: " + numSala);
         System.out.println("Pelicula: " + pelicula.getTitulo());
