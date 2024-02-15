@@ -5,6 +5,7 @@ public class Cine {
     private String nombreCine;
     private int aforo;
     private int numSalas;
+    private int elefantes;
 
     // Este constructor se usa en la clase Main para crear el cine principal
     public Cine(String nombreCine, int aforo, int numSalas) {
@@ -37,6 +38,9 @@ public class Cine {
         this.numSalas = numSalas;
     }
 
+    public void setElefantes(int elefantes) {
+        this.elefantes = elefantes;
+    }
 
 
 }
